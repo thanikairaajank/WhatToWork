@@ -1,0 +1,19 @@
+﻿<Window x:Class="WhatToWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="350" Width="525" Background="#FFD33333">
+    <Grid>
+        <Button Content="Log In" HorizontalAlignment="Left" Margin="377,147,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click_1" BorderBrush="#FF131310" Background="#FF64E0DA" OpacityMask="#FF3CE6CF" FontSize="11" BorderThickness="5" FontFamily="Impact" Height="21">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1947C1" Offset="0"/>
+                    <GradientStop Color="#FF27229B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <TextBox x:Name="txt_Username" HorizontalAlignment="Left" Height="23" Margin="346,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <Label x:Name="label_Username" Content="Username" HorizontalAlignment="Left" Margin="260,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Password" Content="Password" HorizontalAlignment="Left" Margin="260,97,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="txt_Password" HorizontalAlignment="Left" Margin="346,96,0,0" VerticalAlignment="Top" Width="120" Height="23" PasswordChar="*"/>
+    </Grid>
+</Window>
